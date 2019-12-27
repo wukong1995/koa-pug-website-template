@@ -1,0 +1,23 @@
+{
+  "name": "koa-pug-website-template",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/index.js",
+    "start:debug": "nodemon server/index.js",
+    "build": "npm run lint && rm -rf dist && tsc",
+    "lint": "eslint --fix src/**/*.js",
+    "pm2": "pm2 startOrReload --no-daemon pm2.json"
+  },
+  "dependencies": {
+    "koa": "2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.1"
+  }
+}
